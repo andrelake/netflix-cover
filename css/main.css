@@ -1,0 +1,115 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+header .titulo_header {
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: aliceblue;
+}
+
+/*filme principal */
+.principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)100%), url('/img/background-ivar.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position-y: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.principal .container {
+    margin: 10px;
+    width: 70%;
+}
+
+.principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS';
+}
+
+.principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.botao {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 30px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.carousel {
+    margin-top: 5px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .principal .descricao {
+        width: 50%;
+    }
+}
